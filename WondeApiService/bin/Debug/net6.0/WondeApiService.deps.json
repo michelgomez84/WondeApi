@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WondeApiService/1.0.0": {
+        "dependencies": {
+          "Wonde.NET": "1.0.8"
+        },
+        "runtime": {
+          "WondeApiService.dll": {}
+        }
+      },
+      "Wonde.NET/1.0.8": {
+        "runtime": {
+          "lib/net461/Wonde.NET.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WondeApiService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wonde.NET/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mw0ApHgsbYWOezKCdK7xXAoymqSPmXACcWHDx4sh+GBR9dR4rwD/h/pghMJC442ZNKHXF2/n38lXj/RdAaYZ9A==",
+      "path": "wonde.net/1.0.8",
+      "hashPath": "wonde.net.1.0.8.nupkg.sha512"
+    }
+  }
+}
