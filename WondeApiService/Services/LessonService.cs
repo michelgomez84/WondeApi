@@ -1,29 +1,61 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WondeApiModel;
+using WondeApiServices.Helpers;
 using WondeApiServices.IServices;
 
 namespace WondeApiServices.Services
 {
-    public class LessonService: ILessonService
+    public class LessonService : ILessonService
     {
-        Wonde.Client client = null;
-        public LessonService(string token)
+        string urlBase { get; set; } = "https://api.wonde.com/v1.0/";
+
+        public LessonService()
         {
-            client = new Wonde.Client(token);
+
         }
 
         //return All Schools
-        public async Task<Wonde.ResultIterator> GetAll(string schoolId = null)
+        public async Task<LessonModel> GetAll(string accessToken, string schoolId)
         {
-            return string.IsNullOrEmpty(schoolId) ? client.schools.lessons.all() : client.school(schoolId).lessons.all();
+            using (var _ApiConnection = new ApiConnection(urlBase))
+            {
+                _ApiConnection.Client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
+                _ApiConnection.Client.DefaultRequestHeaders.TryAddWithoutValidation("Authorization", string.Format("Bearer {0}", accessToken));
+
+                var response = await _ApiConnection.Client.GetAsync(string.Format("schools/{0}/lessons", schoolId));
+
+                var data = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    return JsonConvert.DeserializeObject<LessonModel>(data);
+                }
+            }
+            return null;
         }
 
-        public async Task<object> Get(string id)
+        public async Task<LessonModelSingle> Get(string accessToken, string schoolId, string id)
         {
-            return client.schools.lessons.get(id);
+            using (var _ApiConnection = new ApiConnection(urlBase))
+            {
+                _ApiConnection.Client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
+                _ApiConnection.Client.DefaultRequestHeaders.TryAddWithoutValidation("Authorization", string.Format("Bearer {0}", accessToken));
+
+                var response = await _ApiConnection.Client.GetAsync(string.Format("schools/{0}/lessons/{1}", schoolId, id));
+
+                var data = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    return JsonConvert.DeserializeObject<LessonModelSingle>(data);
+                }
+            }
+            return null;
         }
+
+
     }
 }

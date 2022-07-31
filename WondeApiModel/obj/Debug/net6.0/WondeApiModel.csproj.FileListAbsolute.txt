@@ -1,0 +1,12 @@
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.csproj.AssemblyReference.cache
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.AssemblyInfoInputs.cache
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.AssemblyInfo.cs
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.csproj.CoreCompileInputs.cache
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\bin\Debug\net6.0\WondeApiModel.deps.json
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\bin\Debug\net6.0\WondeApiModel.dll
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\bin\Debug\net6.0\WondeApiModel.pdb
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.dll
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\refint\WondeApiModel.dll
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\WondeApiModel.pdb
+D:\_PROJECTS\_JAVIER\SchoolService\WondeApi\WondeApiModel\obj\Debug\net6.0\ref\WondeApiModel.dll
