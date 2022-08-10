@@ -627,20 +627,6 @@
         "runtime": {
           "bin/placeholder/WondeApiModel.dll": {}
         }
-      },
-      "WondeApiService/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "WondeApiModel": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/WondeApiService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WondeApiService.dll": {}
-        }
       }
     }
   },
@@ -1404,11 +1390,6 @@
       "type": "project",
       "path": "../WondeApiModel/WondeApiModel.csproj",
       "msbuildProject": "../WondeApiModel/WondeApiModel.csproj"
-    },
-    "WondeApiService/1.0.0": {
-      "type": "project",
-      "path": "../WondeApiService/WondeApiService.csproj",
-      "msbuildProject": "../WondeApiService/WondeApiService.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1416,8 +1397,8 @@
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
       "Microsoft.Extensions.Hosting.Abstractions >= 6.0.0",
-      "WondeApiModel >= 1.0.0",
-      "WondeApiService >= 1.0.0"
+      "Newtonsoft.Json >= 13.0.1",
+      "WondeApiModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1455,7 +1436,8 @@
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/MrrQIpHVNC97lQuJctZxHh2UNgXzMsUShVgRMnvmKPZZkVkkN1/api": {}
       },
       "frameworks": {
         "net6.0": {
@@ -1463,9 +1445,6 @@
           "projectReferences": {
             "D:\\_PROJECTS\\_JAVIER\\SchoolService\\WondeApi\\WondeApiModel\\WondeApiModel.csproj": {
               "projectPath": "D:\\_PROJECTS\\_JAVIER\\SchoolService\\WondeApi\\WondeApiModel\\WondeApiModel.csproj"
-            },
-            "D:\\_PROJECTS\\_JAVIER\\SchoolService\\WondeApi\\WondeApiService\\WondeApiService.csproj": {
-              "projectPath": "D:\\_PROJECTS\\_JAVIER\\SchoolService\\WondeApi\\WondeApiService\\WondeApiService.csproj"
             }
           }
         }
@@ -1491,6 +1470,10 @@
           "Microsoft.Extensions.Hosting.Abstractions": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           }
         },
         "imports": [

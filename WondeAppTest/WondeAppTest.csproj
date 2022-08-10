@@ -11,11 +11,11 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\WondeApiModel\WondeApiModel.csproj" />
-    <ProjectReference Include="..\WondeApiService\WondeApiService.csproj" />
   </ItemGroup>
 
 </Project>
